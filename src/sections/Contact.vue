@@ -3,15 +3,13 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl sm:text-5xl font-bold mb-4">
-          Get In
+          <span class="text-white"> Get In </span>
           <span
             class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
             >Touch</span
           >
         </h2>
-        <p class="text-slate-400 text-lg">
-          Have a project in mind? Let's talk!
-        </p>
+        <p class="text-slate-400 text-lg">Have anything in mind? Let's talk!</p>
       </div>
 
       <!-- Contact Info -->
@@ -176,10 +174,6 @@
 <script setup>
 import { onMounted, ref } from "vue";
 
-onMounted(() => {
-  console.log("dddd", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-});
-
 const form = ref({
   name: "",
   email: "",
@@ -192,7 +186,7 @@ const submitMessage = ref(null);
 
 const submitForm = async () => {
   console.log("Form Data:", form.value);
-  return
+  return;
   isSubmitting.value = true;
   submitMessage.value = null;
 
