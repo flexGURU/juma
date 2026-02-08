@@ -23,7 +23,7 @@
             class="rounded-lg border-2 border-cyan-500/30 hover:border-cyan-500 transition-all duration-300 shadow-lg shadow-cyan-500/20"
           >
             <img
-              src="https://github.com/flexGURU/Juma-Portfolio/blob/71e760be4ef74964c9edb6fd5622db1b18a46eff/src/assets/juma-home.jpg?raw=true"
+              src="/src/assets/johma home.png"
               alt="James Juma Sindani"
               class="w-full h-full object-cover"
             />
