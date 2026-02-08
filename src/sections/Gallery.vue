@@ -95,9 +95,8 @@ import { ref } from "vue";
 const selectedImage = ref(null);
 
 const openLightbox = (image) => {
-  selectedImage.value = image; 
+  selectedImage.value = image;
 };
-
 
 const galleryImages = ref([
   {
@@ -125,11 +124,7 @@ const galleryImages = ref([
     title: "Field Research",
     description: "Data collection and analysis.",
   },
-  {
-    src: "https://github.com/flexGURU/Juma-Portfolio/blob/71e760be4ef74964c9edb6fd5622db1b18a46eff/src/assets/5.jpg?raw=true",
-    title: "Networking Event",
-    description: "Building professional connections.",
-  },
+
   {
     src: "https://github.com/flexGURU/Juma-Portfolio/blob/71e760be4ef74964c9edb6fd5622db1b18a46eff/src/assets/6.jpg?raw=true",
     title: "Technical Setup",

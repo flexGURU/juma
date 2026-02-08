@@ -5,7 +5,7 @@
         <h2 class="text-4xl sm:text-5xl font-bold mb-4">
           <span class="text-white">Work </span>
           <span
-            class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+            class="bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
             >Experience</span
           >
         </h2>
@@ -61,7 +61,7 @@ const jobs = ref([
     title: "Solution Architect",
     company: "Rainforest Alliance",
     type: "Full-time",
-    duration: "2023 - Present",
+    duration: "2025 - Present",
     achievements: [
       "Designed and implemented cloud infrastructure solutions supporting conservation initiatives globally",
       "Optimized cloud spending, reducing infrastructure costs by 35%",
@@ -73,7 +73,7 @@ const jobs = ref([
     title: "Cloud Solutions Architect",
     company: "Huawei",
     type: "Full-time",
-    duration: "2021 - 2023",
+    duration: "2024 - 2025",
     achievements: [
       "Architected enterprise-grade cloud solutions for Fortune 500 clients",
       "Designed hybrid cloud strategies integrating Huawei Cloud with on-premises infrastructure",
@@ -85,7 +85,7 @@ const jobs = ref([
     title: "Cloud Solutions Architect",
     company: "Silicon Overdrive",
     type: "Full-time",
-    duration: "2019 - 2021",
+    duration: "2022 - 2024",
     achievements: [
       "Developed comprehensive cloud adoption roadmaps for enterprise clients",
       "Designed serverless architectures reducing operational overhead by 40%",
@@ -97,7 +97,7 @@ const jobs = ref([
     title: "Co-Founder & Partnership Manager",
     company: "Resource Cloud Academy",
     type: "Self-employed",
-    duration: "2018 - Present",
+    duration: "2022 - Present",
     achievements: [
       "Founded cloud education initiative serving 1,200+ students",
       "Developed and delivered 50+ technical workshops and bootcamps",
@@ -109,7 +109,7 @@ const jobs = ref([
     title: "Cloud Engineer",
     company: "Spartec Consortium-Africa",
     type: "Full-time",
-    duration: "2017 - 2019",
+    duration: "2021 - 2022",
     achievements: [
       "Deployed and managed AWS infrastructure for 20+ enterprise clients",
       "Implemented automated CI/CD pipelines reducing deployment time by 50%",
@@ -121,7 +121,7 @@ const jobs = ref([
     title: "AWS Architect (Apprenticeship)",
     company: "Azubi Africa",
     type: "Apprenticeship",
-    duration: "2015 - 2017",
+    duration: "2020 - 2021",
     achievements: [
       "Completed intensive AWS certification program",
       "Assisted in architecting solutions for African tech startups",
