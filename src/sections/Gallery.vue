@@ -4,7 +4,7 @@
       <div class="text-center mb-16">
         <h2 class="text-4xl sm:text-5xl font-bold mb-4">
           <span
-            class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+            class="bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
             >Gallery</span
           >
         </h2>
@@ -43,6 +43,12 @@
 import { ref } from "vue";
 
 const galleryImages = ref([
+  {
+    src: "https://github.com/flexGURU/juma/blob/main/src/assets/WhatsApp%20Image%202026-02-07%20at%2010.50.13.jpeg?raw=true",
+  },
+  {
+    src: "https://github.com/flexGURU/juma/blob/main/src/assets/WhatsApp%20Image%202026-02-07%20at%2010.50.14.jpeg?raw=true",
+  },
   {
     src: "https://github.com/flexGURU/Juma-Portfolio/blob/71e760be4ef74964c9edb6fd5622db1b18a46eff/src/assets/2.jpg?raw=true",
   },

@@ -173,6 +173,11 @@
 
 <script setup>
 import { onMounted, ref } from "vue";
+import emailjs from "@emailjs/browser";
+import { useToast } from "vue-toast-notification";
+import "vue-toast-notification/dist/theme-sugar.css";
+
+const $toast = useToast();
 
 const form = ref({
   name: "",
@@ -181,45 +186,41 @@ const form = ref({
   message: "",
 });
 
-const isSubmitting = ref(false);
-const submitMessage = ref(null);
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
-const submitForm = async () => {
-  console.log("Form Data:", form.value);
-  return;
-  isSubmitting.value = true;
-  submitMessage.value = null;
+const isSubmitting = ref(false);
+
+async function submitForm() {
+  emailjs.init(publicKey);
 
   try {
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    isSubmitting.value = true;
+    const response = await emailjs.send(serviceId, templateId, {
+      from_name: form.value.name,
+      from_email: form.value.email,
+      subject: form.value.subject,
+      message: form.value.message,
+    });
 
-    submitMessage.value = {
-      type: "success",
-      text: "Message sent successfully! I'll get back to you soon.",
-    };
-
-    // Reset form
-    form.value = {
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    };
-
-    // Clear message after 5 seconds
-    setTimeout(() => {
-      submitMessage.value = null;
-    }, 5000);
+    if (response.status === 200) {
+      $toast.success("Message sent successfully!");
+      form.value = {
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      };
+    }
   } catch (error) {
-    submitMessage.value = {
-      type: "error",
-      text: "Failed to send message. Please try again.",
-    };
+    $toast.error("Failed to send message.");
+
+    console.error("Error sending email:", error);
   } finally {
     isSubmitting.value = false;
   }
-};
+}
 </script>
 
 <style scoped></style>

@@ -1,6 +1,6 @@
 <template>
   <section id="skills" class="py-20 bg-slate-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-2 sm:px-2 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl sm:text-5xl font-bold mb-4">
           <span class="text-white">My </span>
@@ -14,7 +14,6 @@
         </p>
       </div>
 
-      <!-- Skill Categories -->
       <div class="grid md:grid-cols-2 gap-8 mb-16">
         <div
           v-for="(category, index) in skillCategories"
@@ -40,8 +39,9 @@
         </div>
       </div>
 
-      <!-- Cloud Platforms -->
-      <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-12">
+      <div
+        class="bg-slate-800/50 border border-slate-700 rounded-lg p-4 lg:p-12"
+      >
         <h3 class="text-3xl font-bold text-white mb-8 text-center">
           Cloud Platforms Expertise
         </h3>
