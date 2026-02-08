@@ -5,7 +5,7 @@
         <h2 class="text-4xl sm:text-5xl font-bold mb-4">
           <span class="text-white">About </span>
           <span
-            class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+            class="bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
           >
             Me</span
           >
@@ -20,7 +20,7 @@
         <!-- Profile Image -->
         <div class="lg:col-span-1 flex justify-center">
           <div
-            class="w-96 rounded-lg overflow-hidden border-2 border-cyan-500/30 hover:border-cyan-500 transition-all duration-300 shadow-lg shadow-cyan-500/20"
+            class="rounded-lg border-2 border-cyan-500/30 hover:border-cyan-500 transition-all duration-300 shadow-lg shadow-cyan-500/20"
           >
             <img
               src="https://github.com/flexGURU/Juma-Portfolio/blob/71e760be4ef74964c9edb6fd5622db1b18a46eff/src/assets/juma-home.jpg?raw=true"
@@ -29,7 +29,6 @@
             />
           </div>
         </div>
-
         <!-- Content -->
         <div class="lg:col-span-2">
           <p class="text-slate-300 text-lg leading-relaxed mb-6">

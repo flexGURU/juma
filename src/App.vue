@@ -5,9 +5,11 @@ import Layout from "./sections/Layout.vue";
 </script>
 
 <template>
-  <NavBar />
+ <div class="w-full">
+   <NavBar />
   <Layout />
   <Footer />
+ </div>
 </template>
 
 <style scoped></style>
