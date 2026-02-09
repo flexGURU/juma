@@ -63,10 +63,12 @@ const jobs = ref([
     type: "Full-time",
     duration: "2025 - Present",
     achievements: [
-      "Designed and implemented cloud infrastructure solutions supporting conservation initiatives globally",
-      "Optimized cloud spending, reducing infrastructure costs by 35%",
-      "Led migration of legacy systems to cloud-native architecture",
-      "Mentored team of 5 cloud engineers on AWS best practices",
+      "Supported the development and maintenance of Enterprise Solution Architecture aligned with business strategy and value objectives.",
+      "Applied structured architecture methodologies to design and deliver scalable digital solutions across the organization.",
+      "Collaborated with cross-functional teams (Product, Business, DevOps, and Engineering) to drive effective solution adoption.",
+      "Defined and governed solution domains and inter-domain integrations (APIs, microservices) to ensure modularity and reuse.",
+      "Contributed to information and data architecture, including logical data models and enterprise information flows.",
+      "Ensured functional and non-functional requirements were met, with solutions fully tested and quality-reviewed before handover.",
     ],
   },
   {

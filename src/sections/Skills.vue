@@ -70,6 +70,23 @@ import { ref } from "vue";
 
 const skillCategories = ref([
   {
+    name: "Enterprise Architecture",
+    icon: "🏢",
+    description:
+      "Aligning business strategy with IT systems and enterprise-wide architecture",
+    skills: [
+      "Enterprise Architecture Frameworks (TOGAF)",
+      "Business Capability Modeling",
+      "Application Architecture",
+      "Data Architecture",
+      "Integration Architecture",
+      "Technology Roadmapping",
+      "Legacy System Modernization",
+      "Solution Governance",
+    ],
+  },
+
+  {
     name: "Cloud Architecture & Design",
     icon: "🏗️",
     description: "Designing scalable, secure, and resilient cloud solutions",
