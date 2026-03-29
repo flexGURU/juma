@@ -9,7 +9,7 @@
             href="#"
             class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
           >
-            J<small>uma</small> S<small>indani</small>
+            James Juma Sindani
           </a>
         </div>
 

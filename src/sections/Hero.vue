@@ -1,7 +1,7 @@
 <template>
   <section
     id="home"
-    class="min-h-screen flex items-center justify-center bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden pt-20"
+    class="min-h-3/4 pb-10 md:pb-20 flex items-center justify-center bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden pt-20"
   >
     <!-- Animated Background -->
     <div class="absolute inset-0 overflow-hidden">

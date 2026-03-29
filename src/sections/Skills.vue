@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" class="py-20 bg-slate-900">
+  <section id="skills" class="py-8 md:py-20 bg-slate-900">
     <div class="max-w-7xl mx-auto px-2 sm:px-2 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl sm:text-5xl font-bold mb-4">
@@ -51,7 +51,7 @@
             :key="index"
             class="flex flex-col items-center justify-center p-6 rounded-lg bg-slate-900 hover:bg-slate-900 hover:border border-cyan-500/50 transition-all"
           >
-            <div class="text-6xl mb-4">{{ platform.icon }}</div>
+            <img :src="platform.icon" alt="" class="w-16 h-16 mb-4" />
             <h4 class="text-xl font-semibold text-white text-center">
               {{ platform.name }}
             </h4>
@@ -147,22 +147,22 @@ const skillCategories = ref([
 const cloudPlatforms = ref([
   {
     name: "Amazon AWS",
-    icon: "☁️",
+    icon: "https://img.icons8.com/color/48/000000/amazon-web-services.png",
     level: "Expert",
   },
   {
     name: "Microsoft Azure",
-    icon: "🔵",
+    icon: "https://img.icons8.com/color/48/000000/azure-1.png",
     level: "Advanced",
   },
   {
     name: "Google Cloud",
-    icon: "🌐",
+    icon: "https://img.icons8.com/color/48/000000/google-cloud.png",
     level: "Advanced",
   },
   {
     name: "Huawei Cloud",
-    icon: "⛅",
+    icon: "https://yt3.googleusercontent.com/7VVN1MFSn5clhC-9Z-uqCL_Pwxntss917qt45x5MgeG6J60CwRDyGhNq5UGLoyjhXaPeOXBLOBA=s900-c-k-c0x00ffffff-no-rj",
     level: "Expert",
   },
 ]);
